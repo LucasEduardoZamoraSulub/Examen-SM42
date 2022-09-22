@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int rangoi, rangof, tablai, tablaf, totalA, resul;
+    
+    cout<<"TABLAS DE MULTIPLICAR \n"<<endl;
+    
+    cout<<"Ingrese el rango inicial"<<endl;
+    cin >> rangoi;
+    
+    cout<<"Ingrese el rango final"<<endl;
+    cin >> rangof;
+    
+    cout<<"Ingrese el inicio de la tabla"<<endl;
+    cin >> tablai;
+    
+    cout<<"Ingrese el final  de la tabla"<<endl;
+    cin >> tablaf;
+    
+    totalA=((rangof - rangoi) + 1)*((tablaf - tablai) + 1);
+    
+    int arr[totalA]={};
+    
+    
+for (int i = rangoi; i <= rangof; i++){
+		for (int j= tablai; j <= tablaf; j++){
+		    resul = i * j;
+		    arr[totalA]=resul;
+		    cout <<i<<" x " <<j<<" = " <<arr[totalA]<<endl;
+}
+}
+}
